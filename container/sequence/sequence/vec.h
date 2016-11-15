@@ -38,6 +38,7 @@ private:
 };
 void testReserve();
 void testVec();
+
 std::ostream& operator <<(std::ostream &os, const Widget &rhs);
 std::ostream& operator <<(std::ostream &os, const SpecialWidget &rhs);
 std::ostream& operator <<(std::ostream &os, const SpecialWidget1 &rhs);

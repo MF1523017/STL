@@ -10,6 +10,8 @@ int main(int argc, char **argv)
 	//testAssign();
 	//testDelete();
 	//testListRemove();
-	testReserve();
+	//testReserve();
+	//testCAPI();
+	testSwapShrinkToFit();
 	return 0;
 }

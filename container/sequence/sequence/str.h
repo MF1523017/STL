@@ -4,3 +4,5 @@
 using std::string;
 
 void testAssign();
+void testCAPI();
+void testSwapShrinkToFit();

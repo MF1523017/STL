@@ -13,7 +13,7 @@ void testMapRemove()
 	//map 删除单个元素
 #if 0
 	mp.erase(6);//删除的是key对应的值
-	display(mp);
+	displayMap(mp);
 #endif
 	//map 删除条件的所有对象
 	for (auto item = mp.begin(); item != mp.end();)
@@ -25,5 +25,5 @@ void testMapRemove()
 		else
 			++item;
 	}
-	display(mp);
+	displayMap(mp);
 }
