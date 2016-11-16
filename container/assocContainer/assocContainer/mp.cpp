@@ -1,6 +1,11 @@
 #include"mp.h"
 #include"common.h"
 using std::map;
+std::ostream &operator<<(std::ostream &os, const Widget &rhs)
+{
+	os << rhs._weight << " ";
+	return os;
+}
 bool badValue(const int &i)
 {
 	return i % 2 == 0;
@@ -26,4 +31,23 @@ void testMapRemove()
 			++item;
 	}
 	displayMap(mp);
+}
+
+//单效率至关重要时，请在map::operator[]与map::insert之间慎重选择
+void mapInsert()
+{
+	typedef map<int, Widget> IntWidgetMap;
+	IntWidgetMap m;
+	double j = 0;
+	for (int i = 0; i < 5; ++i,++j)
+	{
+		m.insert(IntWidgetMap::value_type(i,Widget(j)));//没有key值的，insert效率更好
+	}
+	displayMap(m);
+
+	for (int i = 0; i < 5; ++i, --j)
+	{
+		m[i] = Widget(j);//有key值的，operator[]效率更高
+	}
+	displayMap(m);
 }

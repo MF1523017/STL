@@ -3,6 +3,8 @@
 int main(int argc, char ** argv)
 {
 	//testMapRemove();
-	testSetPtr();
+	//testSetPtr();
+
+	mapInsert();
 	return 0;
 }
