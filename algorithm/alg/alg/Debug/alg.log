@@ -1,0 +1,16 @@
+﻿  myAlg.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1480): error C2664: “bool (const Point &)”: 无法将参数 1 从“Point *”转换为“const Point &”
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1480): note: 原因如下: 无法从“Point *”转换为“const Point”
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1480): note: 无构造函数可以接受源类型，或构造函数重载决策不明确
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1493): note: 参见对正在编译的函数 模板 实例化“_FwdIt **std::_Remove_if_unchecked<Point**,bool(__cdecl *)(const Point &)>(_FwdIt,_FwdIt,_Pr &)”的引用
+          with
+          [
+              _FwdIt=Point **,
+              _Pr=bool (__cdecl *)(const Point &)
+          ]
+  h:\c++\stl\algorithm\alg\alg\myalg.cpp(71): note: 参见对正在编译的函数 模板 实例化“_FwdIt std::remove_if<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Point *>>>,bool(__cdecl *)(const Point &)>(_FwdIt,_FwdIt,_Pr)”的引用
+          with
+          [
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Point *>>>,
+              _Pr=bool (__cdecl *)(const Point &)
+          ]
